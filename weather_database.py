@@ -15,4 +15,13 @@ with sqlite3.connect("weather.db") as conn:
         index=False
     )
 
-    print("Data saved to weather.db")
+    # Verify data was written
+    result = pd.read_sql_query(
+        "SELECT * FROM weather_data LIMIT 5",
+        conn
+    )
+
+    print("First 5 rows from SQLite database:")
+    print(result)
+
+print("Data saved to weather.db")
