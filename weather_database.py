@@ -21,7 +21,7 @@ with sqlite3.connect("weather.db") as conn:
         conn
     )
 
-    print("First 5 rows from SQLite database:")
+    print("First 5 rows from SQLite table weather_data:")
     print(result)
 
 print("Data saved to weather.db")

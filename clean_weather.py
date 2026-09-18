@@ -4,12 +4,18 @@ df = pd.read_csv("weather_raw.csv")
 
 print("Before cleaning:")
 print(df.shape)
+print(df.head())
 
+# Cleaning
 df = df.drop_duplicates()
 df = df.dropna()
 
+# Transformation
+df["Data"] = df["Data"].str.strip()
+
 print("After cleaning:")
 print(df.shape)
+print(df.head())
 
 df.to_csv("weather_clean.csv", index=False)
 
