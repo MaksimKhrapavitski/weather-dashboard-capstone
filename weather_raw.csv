@@ -1,34 +1,144 @@
-Data
-Accra Fri 1:37 pm 82 °F Dublin * Fri 2:37 pm 63 °F Nairobi Fri 4:37 pm 75 °F
-Addis Ababa Fri 4:37 pm 72 °F Edmonton * Fri 7:37 am 48 °F Nassau * Fri 9:37 am 86 °F
-Adelaide Fri 11:07 pm 60 °F Frankfurt * Fri 3:37 pm 77 °F New Delhi Fri 7:07 pm 83 °F
-Algiers Fri 2:37 pm 80 °F Guatemala City Fri 7:37 am 66 °F New Orleans * Fri 8:37 am 82 °F
-Almaty Fri 6:37 pm 82 °F Halifax * Fri 10:37 am 59 °F New York * Fri 9:37 am 70 °F
-Amman Fri 4:37 pm 90 °F Hanoi Fri 8:37 pm 81 °F Oslo * Fri 3:37 pm 55 °F
-Amsterdam * Fri 3:37 pm 66 °F Harare Fri 3:37 pm 78 °F Ottawa * Fri 9:37 am 54 °F
-Anadyr Sat 1:37 am 45 °F Havana * Fri 9:37 am 82 °F Paris * Fri 3:37 pm 75 °F
-Anchorage * Fri 5:37 am 47 °F Helsinki * Fri 4:37 pm 63 °F Perth Fri 9:37 pm 63 °F
-Ankara Fri 4:37 pm 88 °F Hong Kong Fri 9:37 pm 86 °F Philadelphia * Fri 9:37 am 75 °F
-Antananarivo Fri 4:37 pm 72 °F Honolulu Fri 3:37 am 78 °F Phoenix Fri 6:37 am 91 °F
-Asuncion Fri 10:37 am 79 °F Houston * Fri 8:37 am 80 °F Prague * Fri 3:37 pm 63 °F
-Athens * Fri 4:37 pm 91 °F Indianapolis * Fri 9:37 am 65 °F Reykjavik Fri 1:37 pm 43 °F
-Atlanta * Fri 9:37 am 77 °F Islamabad Fri 6:37 pm 92 °F Rio de Janeiro Fri 10:37 am 70 °F
-Auckland Sat 1:37 am 55 °F Istanbul Fri 4:37 pm 82 °F Riyadh Fri 4:37 pm 109 °F
-Baghdad Fri 4:37 pm 109 °F Jakarta Fri 8:37 pm 83 °F Rome * Fri 3:37 pm 86 °F
-Bangkok Fri 8:37 pm 79 °F Jerusalem * Fri 4:37 pm 86 °F Salt Lake City * Fri 7:37 am 71 °F
-Barcelona * Fri 3:37 pm 81 °F Johannesburg Fri 3:37 pm 73 °F San Francisco * Fri 6:37 am 61 °F
-Beijing Fri 9:37 pm 68 °F Karachi Fri 6:37 pm 86 °F San Juan Fri 9:37 am 87 °F
-Beirut * Fri 4:37 pm 91 °F Kathmandu Fri 7:22 pm 75 °F San Salvador Fri 7:37 am 73 °F
-Belgrade * Fri 3:37 pm 82 °F Kingston Fri 8:37 am 84 °F Santiago * Fri 10:37 am 52 °F
-Bengaluru Fri 7:07 pm 84 °F Kinshasa Fri 2:37 pm 90 °F Santo Domingo Fri 9:37 am 82 °F
-Berlin * Fri 3:37 pm 68 °F Kiritimati Sat 3:37 am 79 °F São Paulo Fri 10:37 am 68 °F
-Bogota Fri 8:37 am 57 °F Kolkata Fri 7:07 pm 84 °F Seattle * Fri 6:37 am 55 °F
-Boston * Fri 9:37 am 66 °F Kuala Lumpur Fri 9:37 pm 79 °F Seoul Fri 10:37 pm 66 °F
-Brasilia Fri 10:37 am 82 °F Kuwait City Fri 4:37 pm 111 °F Shanghai Fri 9:37 pm 77 °F
-Brisbane Fri 11:37 pm 62 °F Kyiv * Fri 4:37 pm 74 °F Singapore Fri 9:37 pm 79 °F
-Brussels * Fri 3:37 pm 68 °F La Paz Fri 9:37 am 40 °F Sofia * Fri 4:37 pm 88 °F
-Bucharest * Fri 4:37 pm 88 °F Lagos Fri 2:37 pm 82 °F St. John's * Fri 11:07 am 63 °F
-Budapest * Fri 3:37 pm 61 °F Lahore Fri 6:37 pm 95 °F Stockholm * Fri 3:37 pm 63 °F
-Buenos Aires Fri 10:37 am 61 °F Las Vegas * Fri 6:37 am 92 °F Suva Sat 1:37 am 71 °F
-Cairo * Fri 4:37 pm 91 °F Lima Fri 8:37 am 71 °F Sydney Fri 11:37 pm 57 °F
-Calgary * Fri 7:37 am 46 °F Lisbon * Fri 2:37 pm 88 °F Taipei Fri 9:37 pm 79 °F
+City,Temperature,Wind,Local Time
+Accra Ghana,84 °F,13 mph,Tue 1:12 pm
+Addis Ababa Ethiopia,77 °F,15 mph,Tue 4:12 pm
+Adelaide Australia,57 °F,2 mph,Tue 10:42 pm
+Algiers Algeria,79 °F,16 mph,Tue 2:12 pm
+Almaty Kazakhstan,77 °F,3 mph,Tue 6:12 pm
+Amman Jordan,84 °F,9 mph,Tue 4:12 pm
+Amsterdam Netherlands,66 °F,6 mph,Tue 3:12 pm
+Anadyr Russia,37 °F,7 mph,Wed 1:12 am
+Anchorage USA,42 °F,0 mph,Tue 5:12 am
+Ankara Turkey,73 °F,3 mph,Tue 4:12 pm
+Antananarivo Madagascar,81 °F,5 mph,Tue 4:12 pm
+Asuncion Paraguay,63 °F,17 mph,Tue 10:12 am
+Athens Greece,68 °F,?,Not available
+Atlanta USA,72 °F,7 mph,Tue 9:12 am
+Auckland New Zealand,55 °F,25 mph,Wed 1:12 am
+Baghdad Iraq,108 °F,16 mph,Tue 4:12 pm
+Bangkok Thailand,86 °F,6 mph,Tue 8:12 pm
+Barcelona Spain,81 °F,9 mph,Tue 3:12 pm
+Beijing China,70 °F,3 mph,Tue 9:12 pm
+Beirut Lebanon,88 °F,10 mph,Tue 4:12 pm
+Belgrade Serbia,61 °F,9 mph,Tue 3:12 pm
+Bengaluru India,81 °F,9 mph,Tue 6:42 pm
+Berlin Germany,66 °F,9 mph,Tue 3:12 pm
+Bogota Colombia,55 °F,6 mph,Tue 8:12 am
+Boston USA,58 °F,20 mph,Tue 9:12 am
+Brasilia Brazil,84 °F,2 mph,Tue 10:12 am
+Brisbane Australia,67 °F,3 mph,Tue 11:12 pm
+Brussels Belgium,66 °F,5 mph,Tue 3:12 pm
+Bucharest Romania,66 °F,7 mph,Tue 4:12 pm
+Budapest Hungary,64 °F,16 mph,Tue 3:12 pm
+Buenos Aires Argentina,45 °F,8 mph,Tue 10:12 am
+Cairo Egypt,88 °F,10 mph,Tue 4:12 pm
+Calgary Canada,57 °F,10 mph,Tue 7:12 am
+Canberra Australia,46 °F,3 mph,Tue 11:12 pm
+Cape Town South Africa,79 °F,18 mph,Tue 3:13 pm
+Caracas Venezuela,88 °F,5 mph,Tue 9:13 am
+Casablanca Morocco,84 °F,6 mph,Tue 1:13 pm
+Chicago USA,57 °F,9 mph,Tue 8:13 am
+Copenhagen Denmark,64 °F,8 mph,Tue 3:13 pm
+Dallas USA,76 °F,6 mph,Tue 8:13 am
+Dar es Salaam Tanzania,84 °F,14 mph,Tue 4:13 pm
+Darwin Australia,81 °F,5 mph,Tue 10:43 pm
+Denver USA,54 °F,5 mph,Tue 7:13 am
+Detroit USA,51 °F,13 mph,Tue 9:13 am
+Dhaka Bangladesh,87 °F,0 mph,Tue 7:13 pm
+Doha Qatar,99 °F,9 mph,Tue 4:13 pm
+Dubai United Arab Emirates,97 °F,13 mph,Tue 5:13 pm
+Dublin Ireland,64 °F,7 mph,Tue 2:13 pm
+Edmonton Canada,48 °F,6 mph,Tue 7:13 am
+Frankfurt Germany,68 °F,10 mph,Tue 3:13 pm
+Guatemala City Guatemala,66 °F,7 mph,Tue 7:13 am
+Halifax Canada,48 °F,7 mph,Tue 10:13 am
+Hanoi Vietnam,86 °F,5 mph,Tue 8:13 pm
+Harare Zimbabwe,76 °F,7 mph,Tue 3:13 pm
+Havana Cuba,77 °F,2 mph,Tue 9:13 am
+Helsinki Finland,57 °F,12 mph,Tue 4:13 pm
+Hong Kong Hong Kong,86 °F,10 mph,Tue 9:13 pm
+Honolulu USA,79 °F,5 mph,Tue 3:13 am
+Houston USA,78 °F,6 mph,Tue 8:13 am
+Indianapolis USA,57 °F,22 mph,Tue 9:13 am
+Islamabad Pakistan,91 °F,22 mph,Tue 6:13 pm
+Istanbul Turkey,68 °F,15 mph,Tue 4:13 pm
+Jakarta Indonesia,84 °F,7 mph,Tue 8:13 pm
+Jerusalem Israel,80 °F,2 mph,Tue 4:13 pm
+Johannesburg South Africa,79 °F,12 mph,Tue 3:13 pm
+Kabul Afghanistan,79 °F,4 mph,Tue 5:43 pm
+Karachi Pakistan,91 °F,13 mph,Tue 6:13 pm
+Kathmandu Nepal,73 °F,6 mph,Tue 6:58 pm
+Khartoum Sudan,100 °F,9 mph,Tue 3:13 pm
+Kingston Jamaica,85 °F,18 mph,Tue 8:13 am
+Kinshasa Congo Dem. Rep.,90 °F,7 mph,Tue 2:13 pm
+Kiritimati Kiribati,82 °F,1 mph,Wed 3:13 am
+Kolkata India,81 °F,5 mph,Tue 6:43 pm
+Kuala Lumpur Malaysia,81 °F,3 mph,Tue 9:13 pm
+Kuwait City Kuwait,113 °F,29 mph,Tue 4:13 pm
+Kyiv Ukraine,57 °F,7 mph,Tue 4:13 pm
+La Paz Bolivia,36 °F,9 mph,Tue 9:13 am
+Lagos Nigeria,82 °F,12 mph,Tue 2:13 pm
+Lahore Pakistan,95 °F,2 mph,Tue 6:13 pm
+Las Vegas USA,69 °F,11 mph,Tue 6:13 am
+Lima Peru,69 °F,11 mph,Tue 8:13 am
+Lisbon Portugal,88 °F,7 mph,Tue 2:13 pm
+London United Kingdom,77 °F,2 mph,Tue 2:13 pm
+Los Angeles USA,67 °F,0 mph,Tue 6:13 am
+Madrid Spain,86 °F,1 mph,Tue 3:13 pm
+Managua Nicaragua,75 °F,0 mph,Tue 7:13 am
+Manila Philippines,80 °F,4 mph,Tue 9:13 pm
+Melbourne Australia,45 °F,10 mph,Tue 11:13 pm
+Mexico City Mexico,59 °F,3 mph,Tue 7:13 am
+Miami USA,81 °F,0 mph,Tue 9:13 am
+Minneapolis USA,50 °F,16 mph,Tue 8:13 am
+Minsk Belarus,50 °F,17 mph,Tue 4:13 pm
+Montevideo Uruguay,48 °F,18 mph,Tue 10:13 am
+Montréal Canada,46 °F,13 mph,Tue 9:13 am
+Moscow Russia,59 °F,2 mph,Tue 4:13 pm
+Mumbai India,86 °F,0 mph,Tue 6:43 pm
+Nairobi Kenya,79 °F,15 mph,Tue 4:13 pm
+Nassau Bahamas,79 °F,5 mph,Tue 9:13 am
+New Delhi India,94 °F,?,Not available
+New Orleans USA,80 °F,10 mph,Tue 8:13 am
+New York USA,59 °F,8 mph,Tue 9:13 am
+Oslo Norway,57 °F,9 mph,Tue 3:13 pm
+Ottawa Canada,46 °F,12 mph,Tue 9:13 am
+Paris France,72 °F,7 mph,Tue 3:13 pm
+Perth Australia,59 °F,6 mph,Tue 9:13 pm
+Philadelphia USA,60 °F,12 mph,Tue 9:13 am
+Phoenix USA,83 °F,0 mph,Tue 6:13 am
+Prague Czechia,57 °F,14 mph,Tue 3:13 pm
+Reykjavik Iceland,48 °F,24 mph,Tue 1:13 pm
+Rio de Janeiro Brazil,77 °F,7 mph,Tue 10:13 am
+Riyadh Saudi Arabia,108 °F,7 mph,Tue 4:13 pm
+Rome Italy,84 °F,6 mph,Tue 3:13 pm
+Salt Lake City USA,60 °F,12 mph,Tue 7:13 am
+San Francisco USA,57 °F,3 mph,Tue 6:13 am
+San Juan Puerto Rico,85 °F,3 mph,Tue 9:13 am
+San Salvador El Salvador,75 °F,2 mph,Tue 7:13 am
+Santiago Chile,57 °F,3 mph,Tue 10:13 am
+Santo Domingo Dominican Republic,81 °F,0 mph,Tue 9:13 am
+São Paulo Brazil,64 °F,6 mph,Tue 10:13 am
+Seattle USA,59 °F,0 mph,Tue 6:13 am
+Seoul South Korea,72 °F,5 mph,Tue 10:13 pm
+Shanghai China,79 °F,6 mph,Tue 9:13 pm
+Singapore Singapore,75 °F,3 mph,Tue 9:13 pm
+Sofia Bulgaria,63 °F,7 mph,Tue 4:13 pm
+St. John's Canada,52 °F,6 mph,Tue 10:43 am
+Stockholm Sweden,61 °F,7 mph,Tue 3:13 pm
+Suva Fiji,72 °F,20 mph,Wed 1:13 am
+Sydney Australia,61 °F,12 mph,Tue 11:13 pm
+Taipei Taiwan,77 °F,9 mph,Tue 9:13 pm
+Tallinn Estonia,57 °F,14 mph,Tue 4:13 pm
+Tashkent Uzbekistan,88 °F,2 mph,Tue 6:13 pm
+Tegucigalpa Honduras,70 °F,0 mph,Tue 7:13 am
+Tehran Iran,93 °F,22 mph,Tue 4:43 pm
+Tokyo Japan,75 °F,7 mph,Tue 10:13 pm
+Toronto Canada,48 °F,10 mph,Tue 9:13 am
+Vancouver Canada,57 °F,5 mph,Tue 6:13 am
+Vienna Austria,63 °F,18 mph,Tue 3:13 pm
+Warsaw Poland,61 °F,12 mph,Tue 3:13 pm
+Washington DC USA,61 °F,15 mph,Tue 9:13 am
+Winnipeg Canada,45 °F,1 mph,Tue 8:13 am
+Yangon Myanmar,82 °F,3 mph,Tue 7:43 pm
+Zagreb Croatia,66 °F,6 mph,Tue 3:13 pm
+Zürich Switzerland,66 °F,7 mph,Tue 3:13 pm
