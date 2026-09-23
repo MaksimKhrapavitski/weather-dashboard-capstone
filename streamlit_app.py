@@ -6,10 +6,13 @@ import matplotlib.pyplot as plt
 st.title("🌤 Weather Dashboard")
 
 st.write(
-    "Select a city to explore weather data."
+    "Explore weather information by city and temperature range."
 )
 
-# Load database
+# --------------------
+# Load Database
+# --------------------
+
 conn = sqlite3.connect("weather.db")
 
 df = pd.read_sql(
@@ -19,18 +22,26 @@ df = pd.read_sql(
 
 conn.close()
 
-st.subheader("Weather Data")
-
-st.dataframe(df)
-
-# Convert temperature column
+# --------------------
+# Clean Temperature Data
+# --------------------
 
 df["Temp_Num"] = (
     df["Temperature"]
     .str.replace("°F", "", regex=False)
     .str.strip()
-    .astype(float)
 )
+
+df["Temp_Num"] = pd.to_numeric(
+    df["Temp_Num"],
+    errors="coerce"
+)
+
+df = df.dropna(subset=["Temp_Num"])
+
+# --------------------
+# Weather Summary
+# --------------------
 
 st.subheader("Weather Summary")
 
@@ -48,24 +59,45 @@ col2.metric(
 
 col3.metric(
     "Max Temp",
-    df["Temp_Num"].max()
+    round(df["Temp_Num"].max(), 1)
 )
 
 # --------------------
-# User filter
+# Filters
 # --------------------
 
-city = st.selectbox(
-    "Select a city",
+st.sidebar.header("Filters")
+
+city = st.sidebar.selectbox(
+    "Select City",
     ["All"] + sorted(df["City"].unique().tolist())
 )
 
-if city != "All":
-    filtered_df = df[df["City"] == city]
-else:
-    filtered_df = df
+min_temp = int(df["Temp_Num"].min())
+max_temp = int(df["Temp_Num"].max())
 
-st.subheader("Filtered Data")
+temp_range = st.sidebar.slider(
+    "Temperature Range (°F)",
+    min_temp,
+    max_temp,
+    (min_temp, max_temp)
+)
+
+filtered_df = df[
+    (df["Temp_Num"] >= temp_range[0]) &
+    (df["Temp_Num"] <= temp_range[1])
+]
+
+if city != "All":
+    filtered_df = filtered_df[
+        filtered_df["City"] == city
+    ]
+
+# --------------------
+# Show Data
+# --------------------
+
+st.subheader("Filtered Weather Data")
 
 st.dataframe(filtered_df)
 
@@ -92,7 +124,7 @@ st.pyplot(fig)
 # Visualization 2
 # --------------------
 
-st.subheader("Top 10 Warmest Cities")
+st.subheader("Top Warmest Cities")
 
 top10 = (
     filtered_df
@@ -110,7 +142,8 @@ ax.bar(
     top10["Temp_Num"]
 )
 
-ax.set_title("Top 10 Warmest Cities")
+ax.set_title("Top Warmest Cities")
+ax.set_xlabel("City")
 ax.set_ylabel("Temperature (°F)")
 
 plt.xticks(rotation=45)
@@ -123,6 +156,34 @@ st.pyplot(fig)
 
 st.subheader("Temperature by City")
 
-st.line_chart(
-    filtered_df.set_index("City")["Temp_Num"]
+chart_df = (
+    filtered_df
+    .sort_values("Temp_Num")
 )
+
+st.line_chart(
+    chart_df.set_index("City")["Temp_Num"]
+)
+
+# --------------------
+# Extra Visualization
+# --------------------
+
+st.subheader("Average Temperature")
+
+avg_temp = (
+    filtered_df["Temp_Num"]
+    .mean()
+)
+
+fig, ax = plt.subplots()
+
+ax.bar(
+    ["Average"],
+    [avg_temp]
+)
+
+ax.set_ylabel("Temperature (°F)")
+ax.set_title("Average Temperature")
+
+st.pyplot(fig)
