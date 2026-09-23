@@ -49,7 +49,7 @@ col1, col2, col3 = st.columns(3)
 
 col1.metric(
     "Cities",
-    len(df)
+    df["City"].nunique()
 )
 
 col2.metric(
@@ -100,6 +100,10 @@ if city != "All":
 st.subheader("Filtered Weather Data")
 
 st.dataframe(filtered_df)
+
+if filtered_df.empty:
+    st.warning("No data available for the selected filters.")
+    st.stop()
 
 # --------------------
 # Visualization 1
